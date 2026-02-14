@@ -1,6 +1,7 @@
-<?php include 'config.php'; ?>
-<link rel="stylesheet" href="style.css">
-<?php include 'menu.php'; ?>
+
+<?php include 'header.php'; ?>
+<?php include 'menu.php'; ?><?php include 'config.php'; ?>
+
 
 <div class="container">
 <h2 style="color:#f1c40f">مدیریت کاربران</h2>
@@ -25,3 +26,5 @@ while($u = mysqli_fetch_assoc($users)){
 <?php } ?>
 </table>
 </div>
+<?php include 'footer.php'; ?>
+

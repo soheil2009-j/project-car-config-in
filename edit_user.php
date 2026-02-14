@@ -1,4 +1,6 @@
-<?php
+
+<?php include 'header.php'; ?>
+<?php include 'menu.php'; ?><?php
 include 'config.php';
 
 $id = $_GET['id'];
@@ -6,8 +8,6 @@ $user = mysqli_fetch_assoc(
     mysqli_query($conn,"SELECT * FROM users WHERE id=$id")
 );
 ?>
-<link rel="stylesheet" href="style.css">
-<?php include 'menu.php'; ?>
 
 <form method="post">
 <h3>ویرایش کاربر</h3>
@@ -44,3 +44,5 @@ if(!empty($password)){
 header("Location: users.php");
 }
 ?>
+<?php include 'footer.php'; ?>
+

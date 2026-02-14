@@ -1,4 +1,6 @@
-<?php
+
+<?php include 'header.php'; ?>
+<?php include 'menu.php'; ?><?php
 include 'config.php';
 
 $id = $_GET['id'];
@@ -6,8 +8,6 @@ $car = mysqli_fetch_assoc(
     mysqli_query($conn,"SELECT * FROM cars WHERE id=$id")
 );
 ?>
-<link rel="stylesheet" href="style.css">
-<?php include 'menu.php'; ?>
 
 <form method="post" enctype="multipart/form-data">
 <h3>ویرایش خودرو</h3>
@@ -55,3 +55,5 @@ if(isset($_POST['update'])){
     header("Location: manage_cars.php");
 }
 ?>
+<?php include 'footer.php'; ?>
+

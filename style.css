@@ -39,7 +39,7 @@ nav a:hover{
 .car-box{
     width:23%;
     background:#111;
-    float:left;
+    float:none;
     margin:1%;
     border-radius:15px;
     overflow:hidden;

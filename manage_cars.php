@@ -1,6 +1,8 @@
-<?php include 'config.php'; ?>
-<link rel="stylesheet" href="style.css">
+
+<?php include 'header.php'; ?>
 <?php include 'menu.php'; ?>
+<?php include 'config.php'; ?>
+
 
 <div class="container">
 <h2 style="color:#f1c40f">مدیریت محتوا (خودروها)</h2>
@@ -25,3 +27,5 @@ while($c = mysqli_fetch_assoc($cars)){
 <?php } ?>
 </table>
 </div>
+<?php include 'footer.php'; ?>
+

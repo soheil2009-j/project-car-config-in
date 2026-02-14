@@ -1,7 +1,9 @@
+<?php include 'header.php'; ?>
+<?php include 'menu.php'; ?>
 
 <?php include 'config.php'; ?>
-<link rel="stylesheet" href="style.css">
-<?php include 'menu.php'; ?>
+
+
 
 <form method="post" enctype="multipart/form-data">
 <input name="name" placeholder="نام خودرو">
@@ -18,3 +20,6 @@ mysqli_query($conn,
 "INSERT INTO cars(name,image,specs) VALUES('$_POST[name]','$img','$_POST[specs]')");
 }
 ?>
+<?php include 'footer.php'; ?>
+
+

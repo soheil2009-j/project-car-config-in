@@ -1,7 +1,9 @@
 
-<?php include 'config.php'; ?>
-<link rel="stylesheet" href="style.css">
+
+<?php include 'header.php'; ?>
 <?php include 'menu.php'; ?>
+<?php include 'config.php'; ?>
+
 <form method="post">
 <h3>ثبت نام</h3>
 <input name="username" placeholder="نام کاربری">
@@ -20,6 +22,6 @@ if(isset($_POST['submit'])){
 
     echo "ثبت نام انجام شد";
 }
-
-
 ?>
+<?php include 'footer.php'; ?>
+

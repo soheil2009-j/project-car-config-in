@@ -1,11 +1,13 @@
+
+<?php include 'header.php'; ?>
+<?php include 'menu.php'; ?>
 <?php 
 include 'config.php';
 $car = mysqli_fetch_assoc(
     mysqli_query($conn,"SELECT * FROM cars WHERE id=$_GET[id]")
 );
 ?>
-<link rel="stylesheet" href="style.css">
-<?php include 'menu.php'; ?>
+
 
 <div class="container">
     <div class="car-detail">
@@ -33,3 +35,5 @@ $car = mysqli_fetch_assoc(
         </table>
     </div>
 </div>
+<?php include 'footer.php'; ?>
+
