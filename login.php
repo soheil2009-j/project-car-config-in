@@ -1,7 +1,11 @@
 
-<?php include 'header.php'; ?>
-<?php include 'menu.php'; ?><?php
+<?php
 include 'config.php';
+ include 'header.php'; 
+ include 'menu.php'; ?>
+
+<?php
+
 
 if(isset($_POST['login'])){
     $username = trim($_POST['username']);
@@ -26,8 +30,6 @@ if(isset($_POST['login'])){
     }
 }
 ?>
-
-
 
 <form method="post">
 <h3>ورود</h3>

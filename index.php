@@ -1,6 +1,7 @@
-
+<?php include 'config.php'; ?>
 <?php include 'header.php'; ?>
-<?php include 'menu.php'; ?><?php include 'config.php'; ?>
+<?php include 'menu.php'; ?>
+
 
 
 <div class="container">

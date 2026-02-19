@@ -1,3 +1,4 @@
+
 <nav>
 <a href="index.php">خانه</a>
 
@@ -15,4 +16,3 @@
     <a href="register.php">ثبت نام</a>
 <?php endif; ?>
 </nav>
-
